@@ -1,0 +1,54 @@
+Title: Thrift Finder
+
+1. Program Description:
+The Thrift Finder is a mobile application designed for Android and iOS platforms. The app will provide users with information about nearby thrift stores based on their location. It will use Google Maps API to list all the thrift stores available in the United States. The app will have features such as search, filter, store details, user reviews, and favorites. The app's code will be exported as a zip file with a README.txt file containing instructions on how to compile and test it.
+
+2. Core Classes, Functions, and Methods:
+
+   - Class `MainActivity`: This is the main class that will launch the application.
+   
+   - Function `getLocation()`: This function will get the user's current location.
+   
+   - Class `GoogleMapsAPI`: This class will interact with the Google Maps API.
+   
+   - Method `listStores()`: This method in the `GoogleMapsAPI` class will list all the thrift stores in the United States.
+   
+   - Class `Store`: This class will represent a thrift store with properties like name, location, reviews, etc.
+   
+   - Class `SearchActivity`: This class will handle the search functionality.
+   
+   - Method `searchStores()`: This method in the `SearchActivity` class will search for thrift stores based on user input.
+   
+   - Class `FilterActivity`: This class will handle the filter functionality.
+   
+   - Method `filterStores()`: This method in the `FilterActivity` class will filter the thrift stores based on user-selected criteria.
+   
+   - Class `StoreDetailsActivity`: This class will display the details of a selected thrift store.
+   
+   - Class `ReviewActivity`: This class will handle the user review functionality.
+   
+   - Method `submitReview()`: This method in the `ReviewActivity` class will allow users to submit reviews for thrift stores.
+   
+   - Class `FavoritesActivity`: This class will handle the favorites functionality.
+   
+   - Method `addToFavorites()`: This method in the `FavoritesActivity` class will allow users to add thrift stores to their favorites.
+   
+   - Class `ExportCodeActivity`: This class will handle the code exporting functionality.
+   
+   - Method `exportCode()`: This method in the `ExportCodeActivity` class will export the app's code as a zip file.
+   
+   - Class `ReadMeActivity`: This class will handle the README.txt file functionality.
+   
+   - Method `generateReadMe()`: This method in the `ReadMeActivity` class will generate a README.txt file with instructions on how to compile and test the app.
+
+3. Non-standard Dependencies:
+
+   - Google Maps API: This API will be used to get the location of the thrift stores and display them on a map.
+   
+   - Retrofit: This is a REST client for Android and Java which will be used to make network requests to the Google Maps API.
+   
+   - Gson: This is a Java library that will be used to convert Java Objects into their JSON representation. It is required for the Retrofit library to parse the API responses.
+   
+   - Zip4j: This library will be used to create the zip file of the app's code.
+
+This specification provides a detailed guide on the classes, methods, and functionalities to be implemented in the Thrift Finder app. The app will provide an easy and convenient way for users to find thrift stores near them, review them, and add them to their favorites.
